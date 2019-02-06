@@ -15,7 +15,7 @@ def read_excel():
 
     #文件位置
 
-    ExcelFile=xlrd.open_workbook('data/excelFile.xls')
+    ExcelFile=xlrd.open_workbook('data/weixinFridendList.xls')
 
     #获取目标EXCEL文件sheet名
 

@@ -9,9 +9,7 @@
 
 import threading
 import itchat
-import xlwt
 import xlrd
-import time
 
 
 def TimerSender(time):
@@ -21,7 +19,7 @@ def TimerSender(time):
 
 def send():
     # itchat.auto_login(hotReload=True)
-    ExcelFile = xlrd.open_workbook('excelFile.xls')
+    ExcelFile = xlrd.open_workbook('data/weixinFridendList.xls')
     print(ExcelFile.sheet_names())
     sheet = ExcelFile.sheet_by_index(0)
     print(sheet.name, sheet.nrows, sheet.ncols)
@@ -36,4 +34,4 @@ def send():
 
 if __name__ == '__main__':
     itchat.auto_login(hotReload=True)
-    TimerSender(10)
+    TimerSender(10) #发送时间待定，单位秒
