@@ -4,6 +4,7 @@
 2. 微信好友列表的获取
 3. 发送微信消息
 参见 itchatDemo/weixinSender.py 
+参考我的csdn博客
 https://blog.csdn.net/weiyang_tang/article/details/82886697
 
 ## xlrd、xlwt,xlutil对excel的创建保存修改读取
