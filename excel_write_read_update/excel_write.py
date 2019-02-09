@@ -21,7 +21,7 @@ def write_excel():
     mySheet.write(2, 1, 1)  # 写入B3，数值等于1
     mySheet.write(2, 2, xlwt.Formula("A3+B3"))  # 写入C3，数值等于2（A3+B3）
     # 5. 保存
-    myWorkbook.save('data/excelFile.xlsx')
+    myWorkbook.save('data/demo.xls')
 
 
 if __name__ == '__main__':
