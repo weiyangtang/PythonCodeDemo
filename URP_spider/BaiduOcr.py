@@ -23,7 +23,7 @@ filePath = "D:/image.jpg"
 
 def get_file_content(filePath):
     im = Image.open('D:/image.jpg')  # 1.打开图片
-    im.show()
+    # im.show()
     with open(filePath, 'rb') as fp:
         return fp.read()
 
@@ -37,7 +37,9 @@ def getVcode():
 
     # 调用通用文字识别接口
     result = aipOcr.basicGeneral(get_file_content(filePath), options)
-    keyWord = result["words_result"][0]['words'].replace(' ', '')
+    print(result)
+    if (result["words_result"][0]['words'] != None):
+        keyWord = result["words_result"][0]['words'].replace(' ', '')
     # print(keyWord)
     return keyWord
 
